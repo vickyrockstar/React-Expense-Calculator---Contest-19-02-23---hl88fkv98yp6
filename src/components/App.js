@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useState}from 'react'
 import '../styles/App.css';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
     x.innerHTML = y;
     document.getElementById("expense-list").appendChild(x);
     const a = y.indexOf('-');
-    const b = y.slice(c+1).trim();
+    const b = y.slice(a+1).trim();
     setExpense(parseInt(b) + expense);
   }
 
